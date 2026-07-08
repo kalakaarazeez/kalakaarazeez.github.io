@@ -21,19 +21,20 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 if (canvas) {
 const ctx = canvas.getContext('2d');
 let W, H, nodes = [];
-const LINK_DIST = 150;
+const LINK_DIST = 175;
 const MOUSE = { x: -9999, y: -9999 };
 
 function resize() {
   W = canvas.width = canvas.offsetWidth;
   H = canvas.height = window.innerHeight;
-  const count = Math.max(28, Math.min(60, Math.floor((W * H) / 28000)));
-  nodes = Array.from({ length: count }, () => ({
+  const count = Math.max(50, Math.min(110, Math.floor((W * H) / 13000)));
+  nodes = Array.from({ length: count }, (_, i) => ({
     x: Math.random() * W,
     y: Math.random() * H,
-    vx: (Math.random() - 0.5) * 0.25,
-    vy: (Math.random() - 0.5) * 0.25,
-    r: Math.random() * 1.5 + 1.2
+    vx: (Math.random() - 0.5) * 0.28,
+    vy: (Math.random() - 0.5) * 0.28,
+    r: Math.random() * 1.6 + 1.3,
+    hue: (i / count) * 300
   }));
 }
 
@@ -59,7 +60,8 @@ function step() {
       const a = nodes[i], b = nodes[j];
       const dist = Math.hypot(a.x - b.x, a.y - b.y);
       if (dist < LINK_DIST) {
-        ctx.strokeStyle = `rgba(62,123,250,${0.22 * (1 - dist / LINK_DIST)})`;
+        const hue = (a.hue + b.hue) / 2;
+        ctx.strokeStyle = `hsla(${hue}, 85%, 65%, ${0.28 * (1 - dist / LINK_DIST)})`;
         ctx.lineWidth = 1;
         ctx.beginPath();
         ctx.moveTo(a.x, a.y);
@@ -72,7 +74,7 @@ function step() {
   for (const n of nodes) {
     ctx.beginPath();
     ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-    ctx.fillStyle = 'rgba(255,255,255,0.85)';
+    ctx.fillStyle = `hsla(${n.hue}, 90%, 75%, 0.95)`;
     ctx.fill();
   }
 
