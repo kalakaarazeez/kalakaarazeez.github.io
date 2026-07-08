@@ -15,6 +15,38 @@
 <canvas id="hero-graph"></canvas>
 <div class="graph-watermark" aria-hidden="true"></div>
 
+<div class="doodle-layer" aria-hidden="true">
+  <svg class="doodle doodle-crane" style="color:#FF6B6B" viewBox="0 0 100 100"><path d="M15 70 L45 40 L40 20 L55 35 L85 25 L60 45 L70 75 L50 60 L30 80 Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+  <svg class="doodle doodle-cube" style="color:#4ECDC4" viewBox="0 0 100 100">
+    <path d="M20 35 L50 20 L80 35 L80 65 L50 80 L20 65 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M20 35 L50 50 L80 35 M50 50 L50 80" fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <svg class="doodle doodle-flute" style="color:#FFD93D" viewBox="0 0 120 40">
+    <rect x="5" y="15" width="110" height="10" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="35" cy="20" r="2.5" fill="currentColor"/>
+    <circle cx="55" cy="20" r="2.5" fill="currentColor"/>
+    <circle cx="75" cy="20" r="2.5" fill="currentColor"/>
+    <circle cx="95" cy="20" r="2.5" fill="currentColor"/>
+  </svg>
+  <svg class="doodle doodle-guitar" style="color:#A78BFA" viewBox="0 0 80 140">
+    <circle cx="40" cy="95" r="30" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="40" cy="95" r="12" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M32 66 Q22 45 30 10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M48 66 Q58 45 50 10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="40" y1="10" x2="40" y2="66" stroke="currentColor" stroke-width="1"/>
+  </svg>
+  <svg class="doodle doodle-mic" style="color:#FF9F5B" viewBox="0 0 60 120">
+    <rect x="20" y="5" width="20" height="45" rx="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M10 40 Q10 65 30 65 Q50 65 50 40" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="30" y1="65" x2="30" y2="90" stroke="currentColor" stroke-width="2"/>
+    <line x1="15" y1="90" x2="45" y2="90" stroke="currentColor" stroke-width="2"/>
+  </svg>
+  <svg class="doodle doodle-cube2" style="color:#5BC0FF" viewBox="0 0 100 100">
+    <path d="M20 35 L50 20 L80 35 L80 65 L50 80 L20 65 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M20 35 L50 50 L80 35 M50 50 L50 80" fill="none" stroke="currentColor" stroke-width="2"/>
+  </svg>
+</div>
+
 <nav id="site-nav">
   <a href="#home" class="nav-mark">PA</a>
   <button id="nav-toggle" aria-label="Toggle menu">
@@ -23,6 +55,7 @@
   <ul id="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#research">Research</a></li>
+    <li><a href="#teaching">Teaching</a></li>
     <li><a href="#record">Record</a></li>
     <li><a href="#achievements">Achievements</a></li>
     <li><a href="#creative">Creative</a></li>
@@ -32,21 +65,28 @@
 
 <!-- ===================== HERO ===================== -->
 <header id="home" class="section hero">
-  <div class="hero-inner">
-    <p class="eyebrow mono">Theoretical Computer Science · IIT Gandhinagar</p>
-    <h1 class="hero-title">Priyanshi<br>Agrawal</h1>
-    <p class="hero-sub">I look for hidden shapes inside graphs, and how fast we can find
-      them. Off the page, I write poetry, rap, and pick up any instrument or puzzle
-      I can get my hands on.</p>
-    <div class="hero-actions">
-      <a href="#research" class="btn btn-primary">See my research</a>
-      <a href="CV_Priyanshi.pdf" class="btn btn-ghost" download>Download CV ↓</a>
+  <div class="hero-inner hero-inner-split">
+    <div class="hero-copy">
+      <p class="eyebrow mono">Theoretical Computer Science · IIT Gandhinagar</p>
+      <h1 class="hero-title">Priyanshi<br>Agrawal</h1>
+      <p class="hero-sub">I look for hidden shapes inside graphs, and how fast we can find
+        them. Off the page, I write poetry, rap, and pick up any instrument or puzzle
+        I can get my hands on.</p>
+      <div class="hero-actions">
+        <a href="#research" class="btn btn-primary">See my research</a>
+        <a href="CV_Priyanshi.pdf" class="btn btn-ghost" download>Download CV ↓</a>
+      </div>
+      <blockquote class="hero-quote">
+        <p class="devanagari">कहकशां की हर अदा को शिद्दतें जब रास आईं,<br>
+          चुनौतियां उन जगनुओं की आफ़ताब को भी भाईं</p>
+        <cite class="mono">— अज़ीज़</cite>
+      </blockquote>
     </div>
-    <blockquote class="hero-quote">
-      <p class="devanagari">कहकशां की हर अदा को शिद्दतें जब रास आईं,<br>
-        चुनौतियां उन जगनुओं की आफ़ताब को भी भाईं</p>
-      <cite class="mono">— अज़ीज़</cite>
-    </blockquote>
+    <div class="hero-photo">
+      <div class="hero-photo-ring">
+        <img src="images/portrait-main.jpeg" alt="Priyanshi Agrawal" loading="lazy">
+      </div>
+    </div>
   </div>
   <div class="scroll-cue mono">scroll<span>↓</span></div>
 </header>
@@ -60,7 +100,7 @@
   <div class="about-grid">
     <div class="about-photo">
       <div class="photo-frame">
-        <img src="me.jpeg" alt="Priyanshi Agrawal" loading="lazy">
+        <img src="images/portrait-main.jpeg" alt="Priyanshi Agrawal" loading="lazy">
       </div>
     </div>
     <div class="about-text">
@@ -133,10 +173,24 @@
   </div>
 </section>
 
-<!-- ===================== RECORD (Conferences + Positions) ===================== -->
-<section id="record" class="section">
+<!-- ===================== TEACHING ===================== -->
+<section id="teaching" class="section">
   <div class="section-head">
-    <p class="eyebrow mono">03 — Record</p>
+    <p class="eyebrow mono">03 — Teaching</p>
+    <h2>Time in front of the classroom</h2>
+  </div>
+  <div class="teaching-card">
+    <span class="tag mono">4 semesters</span>
+    <p>I've worked as a Teaching Assistant for four semesters at IIT Gandhinagar,
+      helping students work through course material, grading, and running
+      problem-solving sessions. Course details coming soon.</p>
+  </div>
+</section>
+
+<!-- ===================== RECORD (Conferences + Positions) ===================== -->
+<section id="record" class="section alt">
+  <div class="section-head">
+    <p class="eyebrow mono">04 — Record</p>
     <h2>Conferences, talks &amp; service</h2>
   </div>
 
@@ -168,9 +222,9 @@
 </section>
 
 <!-- ===================== ACHIEVEMENTS ===================== -->
-<section id="achievements" class="section alt">
+<section id="achievements" class="section">
   <div class="section-head">
-    <p class="eyebrow mono">04 — Achievements</p>
+    <p class="eyebrow mono">05 — Achievements</p>
     <h2>Academic, cultural, and beyond</h2>
   </div>
 
@@ -216,7 +270,7 @@
 <!-- ===================== CREATIVE ===================== -->
 <section id="creative" class="section creative-section">
   <div class="section-head">
-    <p class="eyebrow mono">05 — Creative</p>
+    <p class="eyebrow mono">06 — Creative</p>
     <h2>What I do when I'm not proving things</h2>
     <p class="creative-intro">Poetry is where it started. But I get restless, and
       I'll pick up almost anything with a learning curve.</p>
@@ -273,7 +327,7 @@
 <!-- ===================== CONTACT ===================== -->
 <section id="contact" class="section contact-section">
   <div class="section-head">
-    <p class="eyebrow mono">06 — Contact</p>
+    <p class="eyebrow mono">07 — Contact</p>
     <h2>Let's talk graphs, papers, or poems</h2>
   </div>
   <div class="contact-links">
