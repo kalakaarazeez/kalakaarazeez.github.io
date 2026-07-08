@@ -20,14 +20,17 @@
 }
 
 *{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth; font-size:19px;}
 body{
   margin:0;
   background:var(--paper);
   color:var(--ink);
   font-family:var(--font-body);
-  line-height:1.6;
+  line-height:1.65;
   -webkit-font-smoothing:antialiased;
+}
+@media (max-width: 600px){
+  html{ font-size:17px; }
 }
 .mono{font-family:var(--font-mono); letter-spacing:0.02em;}
 h1,h2,h3,h4{
@@ -516,4 +519,64 @@ a:focus-visible, button:focus-visible{
 
 @media (max-width: 700px){
   .creative-photo-row{ grid-template-columns:1fr; }
+}
+
+/* ============ HERO SPLIT (photo + copy) ============ */
+.hero-inner-split{
+  display:flex;
+  align-items:center;
+  gap:clamp(2rem, 5vw, 5rem);
+  max-width:1100px;
+}
+.hero-copy{ flex:1 1 560px; max-width:640px; }
+.hero-photo{ flex:0 0 auto; position:relative; z-index:2; }
+.hero-photo-ring{
+  width:clamp(160px, 22vw, 260px);
+  height:clamp(160px, 22vw, 260px);
+  border-radius:50%;
+  overflow:hidden;
+  border:3px solid var(--blue-accent);
+  box-shadow:0 0 0 8px rgba(62,123,250,0.12), 0 0 40px rgba(255,107,107,0.15);
+}
+.hero-photo-ring img{
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+}
+@media (max-width: 780px){
+  .hero-inner-split{ flex-direction:column-reverse; align-items:flex-start; }
+}
+
+/* ============ TEACHING ============ */
+.teaching-card{
+  max-width:700px;
+  background:var(--alt-bg);
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:2rem;
+}
+.teaching-card p{ margin-bottom:0; font-size:1.05rem; }
+
+/* ============ DECORATIVE DOODLES ============ */
+.doodle-layer{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  overflow:hidden;
+}
+.doodle{
+  position:absolute;
+  opacity:0.16;
+}
+.doodle-crane{ width:90px; top:12%; left:6%; }
+.doodle-cube{ width:70px; top:65%; left:10%; }
+.doodle-flute{ width:130px; top:22%; right:8%; transform:rotate(-15deg); }
+.doodle-guitar{ width:70px; top:55%; right:6%; }
+.doodle-mic{ width:55px; bottom:8%; left:20%; }
+.doodle-cube2{ width:60px; bottom:15%; right:20%; }
+
+@media (max-width: 780px){
+  .doodle{ opacity:0.1; }
+  .doodle-flute, .doodle-guitar{ display:none; }
 }
