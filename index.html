@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Priyanshi Agrawal — Graph Algorithms &amp; Theoretical CS</title>
+<meta name="description" content="Priyanshi Agrawal — PhD researcher in graph algorithms and theoretical computer science at IIT Gandhinagar. Poet, musician, and lifelong learner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="hero-graph"></canvas>
+
+<nav id="site-nav">
+  <a href="#home" class="nav-mark">PA</a>
+  <button id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#record">Record</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#creative">Creative</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header id="home" class="section hero">
+  <div class="hero-inner">
+    <p class="eyebrow mono">Theoretical Computer Science · IIT Gandhinagar</p>
+    <h1 class="hero-title">Priyanshi<br>Agrawal</h1>
+    <p class="hero-sub">I study the shapes hiding inside graphs — which small patterns
+      a graph contains, and how fast we can find them. Off the page, I write poetry,
+      rap, and chase every instrument and puzzle I can get my hands on.</p>
+    <div class="hero-actions">
+      <a href="#research" class="btn btn-primary">See my research</a>
+      <a href="CV_Priyanshi.pdf" class="btn btn-ghost" download>Download CV ↓</a>
+    </div>
+    <div class="hero-stats mono">
+      <div><span class="stat-num">9.17</span><span class="stat-label">PhD CPI</span></div>
+      <div><span class="stat-num">P7 / C7</span><span class="stat-label">induced patterns</span></div>
+      <div><span class="stat-num">2024–</span><span class="stat-label">PhD, IITGN</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue mono">scroll<span>↓</span></div>
+</header>
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section">
+  <div class="section-head">
+    <p class="eyebrow mono">01 — About</p>
+    <h2>From equations to edges — and back to language</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-photo" aria-hidden="true">
+      <div class="photo-frame">
+        <svg viewBox="0 0 200 200" class="avatar-graph">
+          <circle cx="60" cy="50" r="6" class="node"/>
+          <circle cx="140" cy="45" r="6" class="node"/>
+          <circle cx="100" cy="100" r="7" class="node node-accent"/>
+          <circle cx="45" cy="140" r="6" class="node"/>
+          <circle cx="150" cy="145" r="6" class="node"/>
+          <circle cx="100" cy="165" r="5" class="node"/>
+          <line x1="60" y1="50" x2="100" y2="100" class="edge"/>
+          <line x1="140" y1="45" x2="100" y2="100" class="edge"/>
+          <line x1="100" y1="100" x2="45" y2="140" class="edge"/>
+          <line x1="100" y1="100" x2="150" y2="145" class="edge"/>
+          <line x1="45" y1="140" x2="100" y2="165" class="edge"/>
+          <line x1="150" y1="145" x2="100" y2="165" class="edge"/>
+        </svg>
+      </div>
+      <p class="photo-caption mono">add your photo here</p>
+    </div>
+    <div class="about-text">
+      <p>I'm a PhD student in the Department of Computer Science and Engineering at
+        <strong>IIT Gandhinagar</strong>, working in theoretical computer science —
+        specifically on combinatorial algorithms for detecting induced subgraphs.</p>
+      <p>My path here wasn't a straight line. I did my B.Sc. in Mathematics at
+        St. Xavier's College, Ahmedabad, then an M.Sc. in Mathematics at IIT Gandhinagar,
+        where I found myself pulled toward the algorithmic side of the field — the point
+        where a proof turns into something you can actually run. That pull is what
+        brought me into a PhD.</p>
+      <p>Outside the department, I'm a core member of the <strong>Ahmedabad Literary
+        Society</strong> and the outgoing Secretary of the Literary Club at IIT Gandhinagar.
+        I think of research and writing as the same instinct pointed in two directions:
+        both are about finding the structure underneath something that, at first,
+        looks unruly.</p>
+      <div class="edu-list">
+        <div class="edu-row">
+          <span class="edu-year mono">2024–</span>
+          <span class="edu-what">PhD, Computer Science — IIT Gandhinagar <em>(CPI 9.17)</em></span>
+        </div>
+        <div class="edu-row">
+          <span class="edu-year mono">2022–24</span>
+          <span class="edu-what">M.Sc. Mathematics — IIT Gandhinagar <em>(CPI 7.51)</em></span>
+        </div>
+        <div class="edu-row">
+          <span class="edu-year mono">2019–22</span>
+          <span class="edu-what">B.Sc. Mathematics — St. Xavier's College, Ahmedabad <em>(8.36, Outstanding)</em></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RESEARCH ===================== -->
+<section id="research" class="section alt">
+  <div class="section-head">
+    <p class="eyebrow mono">02 — Research</p>
+    <h2>Finding small patterns inside big graphs</h2>
+  </div>
+
+  <div class="research-current">
+    <span class="tag mono">current focus</span>
+    <p>My current work is on <strong>combinatorial algorithms for induced subgraph
+      detection</strong>: given a large graph, how quickly can we tell whether it
+      contains a specific small pattern — a path, a cycle, or another fixed shape —
+      as an induced subgraph? I work with polynomial-based methods and exploit
+      <strong>automorphism parity</strong> to design faster detection algorithms,
+      with particular attention to patterns like <span class="mono">P₇</span> and
+      <span class="mono">C₇</span>.</p>
+  </div>
+
+  <div class="thesis-block">
+    <span class="tag mono">master's thesis · 2023–24</span>
+    <h3>Mathematical Structures in Data and Music</h3>
+    <div class="thesis-cols">
+      <div class="thesis-col">
+        <h4>Semester I — Topological Data Analysis</h4>
+        <p>I studied how single-linkage clustering behaves on high-dimensional data,
+          implemented the clustering algorithms in Python, and applied them to
+          real institutional datasets.</p>
+      </div>
+      <div class="thesis-col">
+        <h4>Semester II — Mathematics of Music</h4>
+        <p>I explored how algorithmic methods can compute the rank and metrical
+          pattern of Swara permutations in Rev-Colex order, and implemented
+          several of these ranking algorithms in Python.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RECORD (Conferences + Positions) ===================== -->
+<section id="record" class="section">
+  <div class="section-head">
+    <p class="eyebrow mono">03 — Record</p>
+    <h2>Conferences, talks &amp; service</h2>
+  </div>
+
+  <div class="record-grid">
+    <div class="record-col">
+      <h3 class="mono">Academic visits &amp; conferences</h3>
+      <ul class="timeline">
+        <li><span class="mono">2026</span> FSTTCS — BITS Pilani, Goa Campus</li>
+        <li><span class="mono">2025</span> Frontiers of Graph Algorithms — IISc Bangalore</li>
+        <li><span class="mono">2024</span> FSTTCS — IIT Gandhinagar</li>
+        <li><span class="mono">2024</span> Frontiers of Geometric Algorithms — IISc Bangalore</li>
+      </ul>
+      <p class="note">Publications and preprints are on their way — this section
+        will grow as papers come out.</p>
+    </div>
+    <div class="record-col">
+      <h3 class="mono">Positions of responsibility</h3>
+      <ul class="timeline">
+        <li><span class="mono">2025–26</span> Secretary, Literary Club, IIT Gandhinagar</li>
+        <li><span class="mono">2025–26</span> Co-organiser, CS Theory Seminar Series</li>
+        <li><span class="mono">2024</span> Content Analyst, TEDxIITGandhinagar</li>
+        <li><span class="mono">—</span> Core Member, Ahmedabad Literary Society</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACHIEVEMENTS ===================== -->
+<section id="achievements" class="section alt">
+  <div class="section-head">
+    <p class="eyebrow mono">04 — Achievements</p>
+    <h2>Academic, cultural, and beyond</h2>
+  </div>
+
+  <div class="ach-grid">
+    <div class="ach-card">
+      <h3 class="mono">Academic</h3>
+      <ul>
+        <li><strong>World Rank 47, State Rank 1</strong> — International Informatics Olympiad, 2017</li>
+        <li>Admitted to the Early Admit M.Sc. Program, IIT Gandhinagar (1 of 500 applicants), 2022</li>
+        <li>Certified, A.R. Rao Mathematics Competition, 2022</li>
+        <li>Zonal Topper, Mimamsa — IISER Pune, 2022</li>
+        <li>Gold Medalist, Insight Coding Competition, L.D. Engineering College — 2020, 2022</li>
+      </ul>
+    </div>
+    <div class="ach-card">
+      <h3 class="mono">Cultural</h3>
+      <ul>
+        <li>Winner, Annual Poetry Competition <em>Unkahi</em>, IIT Gandhinagar — 2023, 2024, 2025</li>
+        <li>Wrote &amp; directed the winning Street Play, Inter IIT Cultural Meet 7.0 — 2024</li>
+        <li>Top 16 Poets of India, Kshitij Poetry Foundation — 2023</li>
+        <li>Winner, Poetry Competition, DA-IICT Cultural Meet — 2025</li>
+      </ul>
+    </div>
+    <div class="ach-card">
+      <h3 class="mono">Leadership, service &amp; sports</h3>
+      <ul>
+        <li>NCC — 'A' Grade in B &amp; C certificates; Leading Cadet, trained junior cadets at CATC, 2021–22</li>
+        <li>NSS — Volunteer, community outreach and social service, 2019–22</li>
+        <li>Bronze Medalist (×2), State Wushu Championship — 2014–15</li>
+        <li>Gold Medalist (×2), District Wushu Championship — 2014–15</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CREATIVE ===================== -->
+<section id="creative" class="section creative-section">
+  <div class="section-head">
+    <p class="eyebrow mono">05 — Creative</p>
+    <h2>What I do when I'm not proving things</h2>
+    <p class="creative-intro">Poetry is where most of it started — but I'm restless
+      about learning, and I'll pick up almost anything with a learning curve.</p>
+  </div>
+
+  <div class="creative-grid">
+    <div class="creative-card">
+      <span class="tag mono">writing</span>
+      <h3>Poetry &amp; short stories</h3>
+      <p>Three-time winner of Unkahi, IIT Gandhinagar's annual poetry competition,
+        and named among the Top 16 Poets of India by the Kshitij Poetry Foundation.
+        I also write short stories, and wrote &amp; directed a winning street play
+        for Inter IIT Cultural Meet 7.0.</p>
+    </div>
+    <div class="creative-card">
+      <span class="tag mono">performance</span>
+      <h3>Rap</h3>
+      <p>I write and perform rap — the same instinct as poetry, just with a beat
+        underneath it.</p>
+    </div>
+    <div class="creative-card">
+      <span class="tag mono">music</span>
+      <h3>Instruments</h3>
+      <p>Self-taught on flute, guitar, harmonium, and kalimba. I like the process
+        of picking up an instrument almost as much as playing it.</p>
+    </div>
+    <div class="creative-card">
+      <span class="tag mono">puzzles</span>
+      <h3>Speedcubing</h3>
+      <p>I solve Rubik's cubes — including 2×2 and 3×3 blindfolded — along with
+        several other twisty puzzles.</p>
+    </div>
+    <div class="creative-card">
+      <span class="tag mono">craft</span>
+      <h3>3D origami</h3>
+      <p>Folding paper into modular 3D forms — a different kind of structure-finding.</p>
+    </div>
+    <div class="creative-card">
+      <span class="tag mono">off duty</span>
+      <h3>Reading &amp; staying active</h3>
+      <p>An avid reader, and a regular at the gym, the pool, and on a bicycle.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section contact-section">
+  <div class="section-head">
+    <p class="eyebrow mono">06 — Contact</p>
+    <h2>Let's talk graphs, papers, or poems</h2>
+  </div>
+  <div class="contact-links">
+    <a href="mailto:agrawalpriyanshi@iitgn.ac.in" class="contact-link">
+      <span class="mono">email</span>
+      <span>agrawalpriyanshi@iitgn.ac.in</span>
+    </a>
+    <a href="https://www.linkedin.com/in/priyanshicode/" target="_blank" rel="noopener" class="contact-link">
+      <span class="mono">linkedin</span>
+      <span>linkedin.com/in/priyanshicode</span>
+    </a>
+    <span class="contact-link contact-disabled">
+      <span class="mono">scholar</span>
+      <span>coming soon</span>
+    </span>
+  </div>
+</section>
+
+<footer class="mono">
+  <p>Built by Priyanshi Agrawal · IIT Gandhinagar · updated 2026</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
