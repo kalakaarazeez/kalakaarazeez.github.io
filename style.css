@@ -20,7 +20,8 @@
 }
 
 *{box-sizing:border-box;}
-html{scroll-behavior:smooth; font-size:19px;}
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+section { min-height: 100vh; scroll-snap-align: start; }
 body{
   margin:0;
   background:var(--paper);
