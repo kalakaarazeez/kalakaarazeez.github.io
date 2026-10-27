@@ -19,7 +19,14 @@ const SITE = {
     ["2026", "FSTTCS, BITS Pilani Goa"], ["2025", "Frontiers of Graph Algorithms, IISc Bangalore"],
     ["2024", "FSTTCS, IIT Gandhinagar"], ["2024", "Frontiers of Geometric Algorithms, IISc Bangalore"]
   ],
-  teaching: [["5 semesters", "Teaching Assistant, IIT Gandhinagar"] , ["2024-25","Discrete Mathematics"], ["2024-25","Data Structures and Algorithms 2"], ["2025-26","Algorithms"], ["2025-26","Theory of computing"],["2026-27","Operating Systems"], ], // add course names here
+  teaching: [
+  ["5 semesters", "Teaching Assistant, IIT Gandhinagar"],
+  ["2024-25", "Discrete Mathematics"],
+  ["2024-25", "Data Structures and Algorithms 2"],
+  ["2025-26", "Algorithms"],
+  ["2025-26", "Theory of Computing"],
+  ["2026-27", "Operating Systems"]
+],
   roles: [
     ["2025–26", "LitSoc Secretary, Literary Club, IITGN"], ["2025–26", "Co-organiser, CS Theory Seminar Series"],
     ["2024", "Content Analyst, TEDxIITGandhinagar"], ["now", "Core member, Ahmedabad Literary Society"]
@@ -60,7 +67,7 @@ const SITE = {
     {t: "Gym · swim · cycle", d: "The counterweight to all the sitting.", img: "", icon: "bell"}
   ],
   gallery: [ // src, caption
-    {src: "images/performance-mic.jpeg", cap: "On the mic"},
+    {src: "images/poet.jpeg.jpeg", cap: "On the mic"},
     {src: "images/kavyanjali.png", cap: "Kavyanjali"},
     {src: "images/feministlitfest.jpeg", cap: "Feminist Lit Fest opening poem, 8 Mar 2026"},
     {src: "images/street.jpeg", cap: "Inter IIT Cultural Meet"},
