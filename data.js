@@ -19,7 +19,7 @@ const SITE = {
     ["2026", "FSTTCS, BITS Pilani Goa"], ["2025", "Frontiers of Graph Algorithms, IISc Bangalore"],
     ["2024", "FSTTCS, IIT Gandhinagar"], ["2024", "Frontiers of Geometric Algorithms, IISc Bangalore"]
   ],
-  teaching: [["5 semesters", "Teaching Assistant, IIT Gandhinagar"]  ["2024-25","Discrete Mathematics"], ["2024-25","Data Structures and Algortihms 2"], ["2025-26","Algorithms"], ["2025-26","Theory of computing"],["2026-27","Operating Systems"], ], // add course names here
+  teaching: [["5 semesters", "Teaching Assistant, IIT Gandhinagar"] , ["2024-25","Discrete Mathematics"], ["2024-25","Data Structures and Algorithms 2"], ["2025-26","Algorithms"], ["2025-26","Theory of computing"],["2026-27","Operating Systems"], ], // add course names here
   roles: [
     ["2025–26", "LitSoc Secretary, Literary Club, IITGN"], ["2025–26", "Co-organiser, CS Theory Seminar Series"],
     ["2024", "Content Analyst, TEDxIITGandhinagar"], ["now", "Core member, Ahmedabad Literary Society"]
