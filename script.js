@@ -7,7 +7,7 @@ $('#quote').innerHTML=`${D.quote[0]}<br>${D.quote[1]}<cite>${D.quote[2]}</cite>`
 $('#r-now').textContent=D.research;
 $('#r-thesis').innerHTML=D.thesis.map(t=>`<div><b>${t[0]}</b><p>${t[1]}</p></div>`).join('');
 $('#r-pre').innerHTML=D.preprints.length?D.preprints.map(p=>`<li><div><a href="${p.link||'#'}" target="_blank">${p.title}</a><br><small>${p.info||''}</small></div></li>`).join(''):'<li class="empty">First one is cooking. Check back soon.</li>';
-rows('#r-conf',D.conferences);rows('#e-ta',D.teaching);rows('#e-roles',D.roles);rows('#e-edu',D.education);rows('#c-list',D.contact);
+rows('#r-conf',D.conferences_attended);rows('#e-ta',D.teaching);rows('#e-roles',D.roles);rows('#e-edu',D.education);rows('#c-list',D.contact);
 $('#w-grid').innerHTML=Object.entries(D.wins).map(([k,v])=>`<div class="glass"><h3 style="margin-top:0">${k}</h3><ul class="rows">${v.map(x=>`<li>${x}</li>`).join('')}</ul></div>`).join('');
 $('#h-grid').innerHTML=D.hobbies.map(h=>`<div class="card">${h.img?`<img src="${h.img}" alt="${h.t}" loading="lazy">`:`<div class="ph"><svg viewBox="0 0 24 24">${ICON[h.icon]||ICON.cube}</svg></div>`}<div class="t"><h4>${h.t}</h4><p>${h.d}</p></div></div>`).join('');
 $('#g-grid').innerHTML=D.gallery.map((g,i)=>`<img src="${g.src}" alt="${g.cap}" data-i="${i}" loading="lazy">`).join('');
