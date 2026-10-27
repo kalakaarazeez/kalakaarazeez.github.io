@@ -3,8 +3,7 @@
 body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.6 Inter,sans-serif;overflow:hidden;height:100vh}
 #bg{position:fixed;inset:0;z-index:0}
 h1,h2,h3{font-family:Fraunces,serif;margin:0}
-h1{font-size:clamp(3rem,8vw,5.5rem);line-height:1;text-shadow:0 0 30px var(--accent)}
-h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:1.2rem;text-shadow:0 0 22px var(--accent)}
+h1,h2{color:#c9d1e6}
 h3{font:600 .75rem 'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:2rem 0 .6rem}
 .lbl{font:.8rem 'JetBrains Mono',monospace;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
 main{position:relative;z-index:1}
