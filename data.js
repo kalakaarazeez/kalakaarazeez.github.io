@@ -5,24 +5,23 @@ const SITE = {
   lines: [  // the rotating lines on the home page
     "I hunt tiny shapes inside giant graphs.",
     "I write poems. Same brain, different bugs.",
-    "I solve Rubik's cubes blindfolded. You're welcome.",
     "Theory person. Yes, the fun kind."
   ],
   quote: ["कहकशां की हर अदा को शिद्दतें जब रास आईं,", "चुनौतियां उन जगनुओं की आफ़ताब को भी भाईं", "— अज़ीज़"],
-  research: "Take a big graph and a tiny pattern (a path, a cycle). Does the pattern hide inside? And how fast can we find out? I use polynomial methods and automorphism parity to answer that, mostly for patterns like P₇ and C₇.",
+  research: "Take a big graph and a tiny pattern (a path, a cycle). Does the pattern hide inside? And how fast can we find out? I use polynomial methods and automorphism parity to answer that.",
   thesis: [
     ["Semester 1: Data", "Single-linkage clustering on high-dimensional data. Coded in Python, tested on real institutional datasets."],
     ["Semester 2: Music", "Ranking Swara permutations in Rev-Colex order, plus their metrical patterns. Also coded in Python."]
   ],
-  preprints: [ // {title:"Paper title", info:"Authors · Venue/arXiv", link:"https://..."}
+  preprints: [  {title:"Faster Algorithms for Finding Small Induced Patterns in Sparse Host Graphs", info:"P. Agrawal, B. Komarath · IIT Gandhinagar/arXiv", link:"https://arxiv.org/abs/2610.00567"}
   ],
-  conferences: [
+  conferences_attended: [
     ["2026", "FSTTCS, BITS Pilani Goa"], ["2025", "Frontiers of Graph Algorithms, IISc Bangalore"],
     ["2024", "FSTTCS, IIT Gandhinagar"], ["2024", "Frontiers of Geometric Algorithms, IISc Bangalore"]
   ],
-  teaching: [["4 semesters", "Teaching Assistant, IIT Gandhinagar"]], // add course names here
+  teaching: [["5 semesters", "Teaching Assistant, IIT Gandhinagar"]  ["2024-25","Discrete Mathematics"], ["2024-25","Data Structures and Algortihms 2"], ["2025-26","Algorithms"], ["2025-26","Theory of computing"],["2026-27","Operating Systems"], ], // add course names here
   roles: [
-    ["2025–26", "Secretary, Literary Club, IITGN"], ["2025–26", "Co-organiser, CS Theory Seminar Series"],
+    ["2025–26", "LitSoc Secretary, Literary Club, IITGN"], ["2025–26", "Co-organiser, CS Theory Seminar Series"],
     ["2024", "Content Analyst, TEDxIITGandhinagar"], ["now", "Core member, Ahmedabad Literary Society"]
   ],
   education: [
@@ -52,22 +51,22 @@ const SITE = {
     ]
   },
   hobbies: [ // t=title, d=one-liner, img=photo path (or ""), icon=shown when there's no photo
-    {t: "Poetry", d: "Words that rhyme on purpose.", img: "images/performance-mic.jpeg", icon: "book"},
+    {t: "Poetry", d: "Words that rhyme on purpose.", img: "images/poet.jpeg", icon: "book"},
     {t: "Rap", d: "Poetry, with a beat and fewer apologies.", img: "", icon: "mic"},
-    {t: "Instruments", d: "Flute, guitar, harmonium, kalimba. Self-taught.", img: "", icon: "flute"},
+    {t: "Instruments", d: "Flute, guitar, harmonium, kalimba. Self-taught.", img: "images/flute.jpeg", icon: "flute"},
     {t: "Cubing", d: "2×2 and 3×3, blindfolded. Yes, really.", img: "", icon: "cube"},
-    {t: "3D Origami", d: "Paper, patience, one very proud peacock.", img: "images/origami-peacock.jpeg", icon: "cube"},
+    {t: "3D Origami", d: "Paper, patience, one very proud peacock.", img: "images/peacock.jpeg", icon: "cube"},
     {t: "Stories & books", d: "I write short stories and read a lot.", img: "", icon: "book"},
     {t: "Gym · swim · cycle", d: "The counterweight to all the sitting.", img: "", icon: "bell"}
   ],
   gallery: [ // src, caption
     {src: "images/performance-mic.jpeg", cap: "On the mic"},
     {src: "images/kavyanjali.png", cap: "Kavyanjali"},
-    {src: "images/feminist-litfest.jpeg", cap: "Feminist Lit Fest opening poem, 8 Mar 2026"},
-    {src: "images/interiit-group.jpeg", cap: "Inter IIT Cultural Meet"},
-    {src: "images/alice-bob-slide.jpeg", cap: "Even TCS talks come with poetry. IISc Bangalore"},
-    {src: "images/iisc-bangalore.jpeg", cap: "IISc Bangalore"},
-    {src: "images/origami-peacock.jpeg", cap: "3D origami peacock"},
+    {src: "images/feministlitfest.jpeg", cap: "Feminist Lit Fest opening poem, 8 Mar 2026"},
+    {src: "images/street.jpeg", cap: "Inter IIT Cultural Meet"},
+    {src: "images/IIScpoem.jpeg", cap: "Even TCS talks come with poetry. IISc Bangalore"},
+    {src: "images/IISc.jpeg", cap: "IISc Bangalore"},
+    {src: "images/peacock.jpeg", cap: "3D origami peacock"},
     {src: "images/portrait-night.jpeg", cap: ""}
   ],
   poems: [ // {title, date, text}. Use \n for line breaks, or write between backticks ` ` to paste with real line breaks.
